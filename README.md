@@ -7,46 +7,43 @@ Master every layer from bare metal to production React. Build browsers, engines,
 
 ## Week 0.5 – CPU & Memory Architecture
 
-**Hardware fundamentals**
-- CPU pipelines: fetch, decode, execute, writeback
-- Register allocation and instruction scheduling
-- Branch prediction and pipeline stalls
-- Cache hierarchy: L1/L2/L3, cache lines, false sharing
-- Memory addressing: virtual memory, MMU, TLB
-- Stack vs heap allocation strategies
+Hardware Fundamentals
 
-**Low-level execution**
-- Assembly language basics (x86-64)
-- System calls and kernel interaction
-- How C/C++ compiles to machine code
-- Memory layout: text, data, BSS, stack, heap
-- Pointer arithmetic and memory alignment
+CPU basics: fetch, decode, execute, writeback
 
-**Project:** Write assembly that allocates memory and executes basic operations. Trace CPU pipeline execution for JS code using performance counters.
+Registers & instructions: basic register usage, simple instruction scheduling
 
----
+Branching & pipelines: branch prediction, avoiding pipeline stalls
+
+Cache basics: L1/L2/L3, cache lines
+
+Memory: stack vs heap, virtual memory basics
+
+Low-level execution:
+
+System calls overview
+
+Memory layout: text, data, stack, heap
+
+Pointers and simple memory alignment
 
 ## Week 1 – Networking from Scratch
 
-**Socket programming**
-- Raw sockets: IP packets, TCP segments, UDP datagrams
-- Three-way handshake implementation
-- Sliding window protocol and flow control
-- Congestion control algorithms (TCP Reno, Cubic)
-- Packet fragmentation and reassembly
+Socket programming: TCP & UDP sockets
 
-**Protocol implementation**
-- HTTP/1.1 parser: chunked encoding, headers, keep-alive
-- HTTP/2: binary framing, multiplexing, HPACK compression
-- TLS handshake: cipher suites, certificate verification, key exchange
-- WebSocket upgrade and frame masking
+TCP basics: three-way handshake, flow control
 
-**Network debugging**
-- tcpdump and Wireshark packet analysis
-- strace for system call tracing
-- Network simulation: latency, jitter, packet loss
+HTTP basics: parsing headers, chunked encoding, keep-alive
 
-**Project:** HTTP/1.1 and HTTP/2 server in C or Rust. Profile every syscall and packet. Build WebSocket chat with custom protocol.
+TLS basics: handshake overview, certificate check (no deep crypto math)
+
+WebSocket basics: upgrade handshake, simple frame handling
+
+Network debugging:
+
+tcpdump / Wireshark basics
+
+simulate network latency and packet loss
 
 ---
 
@@ -279,7 +276,6 @@ Master every layer from bare metal to production React. Build browsers, engines,
 ## Prerequisites
 
 - Strong C/C++ or Rust
-- Assembly language basics
 - Computer architecture knowledge
 - Operating systems fundamentals
 - Data structures and algorithms mastery
